@@ -8,11 +8,11 @@ export class UsuarioService {
 
   constructor() { }
 
-  public getUsuario():Usuario {
-    let usuario = new Usuario()
-    usuario.nome = "Sydrack"
-    usuario.email = "drasyck1@gmail.com"
+  public getUsuario(): Usuario {
+    const usuario = new Usuario();
+    usuario.nome = 'Sydrack';
+    usuario.email = 'drasyck1@gmail.com';
 
-    return usuario
+    return usuario;
   }
 }

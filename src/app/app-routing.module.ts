@@ -1,5 +1,5 @@
-import { NgModule } from '@angular/core'
-import { Routes, RouterModule } from '@angular/router'
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
@@ -11,11 +11,15 @@ const routes: Routes = [
     loadChildren: './usuario/usuario.module#UsuarioModule'
   },
   {
+    path: 'estados',
+    loadChildren: './estados/estados.module#EstadosModule'
+  },
+  {
     path: '',
     pathMatch: 'full',
     redirectTo: '/home'
   }
-]
+];
 
 @NgModule({
   declarations: [],

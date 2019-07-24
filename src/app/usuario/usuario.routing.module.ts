@@ -1,13 +1,18 @@
+import { UsuarioCadastroComponent } from './cadastro/usuario-cadastro.component';
 import { UsuarioComponent } from './usuario.component';
-import { NgModule } from '@angular/core'
-import { Routes, RouterModule } from '@angular/router'
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
     path: '',
     component: UsuarioComponent
+  },
+  {
+    path: 'add',
+    component: UsuarioCadastroComponent
   }
-]
+];
 
 @NgModule({
   declarations: [],
@@ -18,4 +23,4 @@ const routes: Routes = [
     RouterModule
   ]
 })
-export class UsuarioRoutingModule {}
+export class UsuarioRoutingModule { }

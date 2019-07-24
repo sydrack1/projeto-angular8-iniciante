@@ -6,13 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-  public texto:string
+  public texto: string;
   constructor() { }
 
   ngOnInit() {
-    this.texto = "Olá mundo"
+    this.texto = 'Olá mundo';
   }
-  clicked(text:string){
-    this.texto = text
+  clicked(text: string) {
+    this.texto = text;
   }
 }

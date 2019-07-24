@@ -1,13 +1,21 @@
-<p>usuario works!</p>
-<div>
-    Nome do usuário:
-</div>
-<div>
-    {{ usuario.nome }}
-</div>
-<div>
-    Email:
-</div>
-<div>
-    {{ usuario.email}}
-</div>
+<table>
+    <tr>
+        <th>
+            Nome
+        </th>
+        <th>
+            Email
+        </th>
+    </tr>
+    <tr *ngFor="let usuario of usuarios">
+        <td>
+            {{usuario.nome}}
+        </td>
+        <td>
+            {{usuario.email}}
+        </td>
+    </tr>
+</table>
+<button routerLink="add">
+    Add
+</button>
