@@ -15,6 +15,10 @@ const routes: Routes = [
     loadChildren: './estados/estados.module#EstadosModule'
   },
   {
+    path: 'prime-ng',
+    loadChildren: './prime-ng/prime-ng.module#PrimeNgModule'
+  },
+  {
     path: '',
     pathMatch: 'full',
     redirectTo: '/home'

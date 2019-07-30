@@ -1,3 +1,4 @@
+import { EstadosService } from './../estados.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./estados.component.css']
 })
 export class EstadosComponent implements OnInit {
-
-  constructor() { }
+  public estados: any;
+  constructor(private estadosService: EstadosService) { }
 
   ngOnInit() {
+     this.estadosService.getEstados().subscribe(response => this.estados = response);
   }
 
 }
