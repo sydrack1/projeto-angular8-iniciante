@@ -17,7 +17,7 @@ export class MenuComponent implements OnInit {
                       icon: 'pi pi-fw pi-home',
                       routerLink: 'home'
                   },
-                  {label: 'Open'},
+                  {label: 'Open', routerLink: 'usuario'},
                   {label: 'Quit'}
               ]
           },
